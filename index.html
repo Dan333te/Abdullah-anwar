@@ -1,154 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/75a3afb188.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorthims!</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Roboto+Mono:wght@600;700&family=Roboto:wght@700;900&family=Secular+One&family=Shadows+Into+Light&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Responsive Section Services</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-  </head>
 <body>
-  <nav class=" bg-teal-200  p-4 flex justify-between items-center h-16 fixed top-0 z-40 w-full ">
-    <!-- <a  class="uppercase text-blue-600  text-2xl">Algorthims</a> -->
-    <a href="" class="p-6"><img src="images/machine-learning (1).png" height="64px" width="64px"  alt=""></a>
-    <ul id="navMenu">
-        <li><a id="Home" >Home</a></li>
-        <li><a id="servNav" >Services</a></li>
-        <li><a   id="work" >Work</a></li>
-        <li><a   id="info" >Info</a></li>
-        <a style="background-color: #DF3B5C; cursor: pointer;" class="px-4 py-2 text-xl  rounded-2xl text-white" id="GetStarted">Get Started</a>
-       
-    </ul>
-    
-    <a  id="ham" ><img src="./images/hamburger-Menu.jpg" height="64px" width="64px" alt="" >
-    </a>
-   
-    
-    
-    </nav>
-<section id="HomeSec" class="  flex justify-between  items-center  px-10">
-
-<div id="Home-left" class="w-1/2 flex-col   my-48">
-
-<h1 class="   md: text-blue-600 text-7xl font-bold ">Who we are?
-
-<p class="max-w-xl my-6 text-xl text-gray-500">We are a dynamic duo passionate about algorithms and excited to share our knowledge with you. Our journey began as a college project where we realized the power of algorithms in solving complex problems and optimizing processes. Now, we're on a mission to make algorithms more accessible to everyone. Whether you're a student looking for resources to ace your computer science courses or a professional seeking to sharpen your algorithmic skills, you've come to the right place. </p>
-
-<a href="" style="background-color: #DF3B5C;" class="px-6 py-2 my-4 text-xl   rounded-2xl text-white ">Read More</a>
-
-</div>
-
-<div id="right" >
-  <img src="./images/computer-algorithm-illustration-concept-modern-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration-removebg.png" alt="" height="800px" width="900px" id="Home-img">
-
-
-</div>
-
-</section>
+	<br />
+	<p class="header">Binary Search</p>
 
 
 
-<h1 id="ServicesHeader" style="padding-bottom: 10px; text-align: center;">Services</h1>
-<section  id="services" >
 
-  <div id="card">
-<img src="images/modeling.png" height="120px" width="120px" alt="">
-<h2>dijkstra's Algorthim</h2>
-<p>Dijkstra’s Algorithm is a popular algorithms for solving many single-source shortest path problems having non-negative edge weight in the graphs i.e., it is to find the shortest distance between two vertices on a graph. It was conceived by Dutch computer scientist Edsger W. Dijkstra in 1956.</p>
-<a href="" id="learn">Learn more</a>
+	<div id="array"></div>
+	<br /><br />
 
-  </div>
-  <div id="card">
-    <img src="images/sort (1).png" height="120px" width="120px" alt="">
-    <h2>Bubble sort</h2>
-    <p>Bubble Sort is the simplest sorting algorthim that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.</p>
-    <a href="" id="learn">Learn more</a>
+	<div style="text-align: center">
+	<label for="fname">
+		Number to be Searched:
+	</label>
+	<input type="text" id="fname"
+			name="fname" />
+	<br /><br />
+	<button id="btn"
+			onclick="BinarySearch()">Search</button>
+	<br />
+	<br />
+	<div id="text"></div>
+	</div>
 
-
-
-  </div>
-  <div id="card">
-    <img src="images/sort (1).png" height="120px" width="120px" alt="">
-    <h2>Bubble sort</h2>
-    <p>Bubble Sort is the simplest sorting algorthim that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.</p>
-    <a href="" id="learn">Learn more</a>
-
-
-
-  </div>
- 
-  
-  
-
-
-</section>
-<footer>
-    <a href="" target="_blank">
-<img src="images/facebook.png" height="32px" width="32px" alt="">
-</a>
-<a href="https://www.instagram.com/vergil_iq/" target="_blank">
-    <img src="images/instagram.png" height="32px" width="32px" alt="">
-    </a>
-    <a href="https://github.com/Dan333te" target="_blank">
-        <img src="images/github.png" height="32px" width="32px" alt="">
-        </a>
-        
-</footer>
-  
-
-
-
-<script src="index.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
-
- <!-- <div id="services-container">
-  <div  id="card">
-<img src="images/modeling.png" height="64px " width="64px" class="my-4" alt="">
-  </div>
-  <div  id="card">
-    
-      </div>
-      <div  id="card">
-        
-          </div> -->
-
-
-  <!-- <div id="card">
-  <div id="serviceArc">
-  </div>
-
-
-    
-  
-
-
-</div>
-<div id="card">
-  <div id="serviceArc">
-  </div>
-  
-</div>
-<div id="card">
-  <div id="serviceArc">
-  </div>
-  
-</div>
- </div>
-
-
-</section> -->
